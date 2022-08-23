@@ -2,17 +2,31 @@
     <div class="common-layout">
       <!-- <el-button type="primary">Primary</el-button> -->
       <el-container>
-        <el-header class="profile">Profile</el-header>
+        <el-header class="profile" style="height:30px;">Profile</el-header>
             <el-main>
               name 眞田将希 (Sanada Masaki) <br>
               Age 22<br>
               学歴<br>
             </el-main>
-        <el-header>スキル</el-header>
-      <el-main></el-main>
-        <el-header>各種リンク</el-header>
+      </el-container>
+
+      <el-container>
+        <el-header class="skill">スキル</el-header>
             <el-main>
-              aaa
+              Network
+              machineLeaning
+
+              Python
+              Git
+              AWS
+            </el-main>
+      </el-container>
+      <el-container>
+        <el-header class="link">各種リンク</el-header>
+            <el-main>
+              note
+              Qiita
+              github
             </el-main>
 
 </el-container>
@@ -25,10 +39,18 @@
 </script>
 
 <style>
-.el-header {
-  background-color: #97cdf3;
-}
+
 .profile {
   background-color: #97cdf3;
+  height:20px;
 }
+.skill {
+  background-color: #97cdf3;
+  height:50px;
+}
+.link {
+  background-color: #97cdf3;
+}
+
+
 </style>
