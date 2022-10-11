@@ -3,8 +3,8 @@ import HomeView from '../views/HomeView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/portfolio',
-    name: 'home',
+    path: '/',
+    name: 'portfolio',
     component: HomeView
   },
   {

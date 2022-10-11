@@ -19,4 +19,4 @@ npm run build
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### GitHub Pages LINK
-https://masaki12-s.github.io
+https://masaki12-s.github.io/portfolio
