@@ -1,4 +1,7 @@
 <template>
+    <el-header>
+        works
+    </el-header>
      <el-card class="box-card">
                 <template #header>
                   <div class="card-header">
