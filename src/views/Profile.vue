@@ -1,27 +1,26 @@
 <template>
     <el-container>
-        <el-header class="profile" style="height:60px;padding: auto;">Profile</el-header>
+        <el-header class="profile" height=70px>Profile</el-header>
             <el-main>
-                <v-row>
-                    <v-col cols="6">
-                        fdsfs
-                    </v-col>
-                    <v-col cols="6">
+                <el-row>    
+                    <el-col :span="12"><div class="grid-content ep-bg-purple-dark" />
                         name 眞田将希 (Sanada Masaki) <br>
-                Age 22 <br>
-                <el-table :data="tableData" style="width: 45%" >
-                    <el-table-column prop="year_month" label="year_month" width="180" />
-                    <el-table-column prop="school" label="School" width="380" />
-                    <el-table-column prop="info" label="Info" />
-                </el-table>
- 
-              趣味：PC触る、食べ物フェスいく
-              目標：就活終わらせて、欲しいもの（時計、macbook）を買う
-              旅行行く   
-                    </v-col>
-                    aaa
-                </v-row>
-              
+                        Age 22 <br>
+                        趣味：PC触る、食べ物フェスいく<br>
+                        目標：就活終わらせて、欲しいもの（時計、macbook）を買う<br>
+                        旅行行く  <br>
+                    </el-col>
+                    
+                    <el-col :span="12">
+                        <div class="grid-content ep-bg-purple-dark" />
+                        <h2> 学歴　</h2>
+                            <el-table :data="tableData" style="width: 100%" >
+                                <el-table-column prop="year_month" label="year_month" width="120" />
+                                <el-table-column prop="school" label="School" width="400" />
+                                <el-table-column prop="info" label="Info" />
+                            </el-table>
+                    </el-col>                   
+                </el-row>           
             </el-main>
       </el-container>
 </template>
