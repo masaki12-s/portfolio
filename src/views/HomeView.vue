@@ -2,18 +2,20 @@
 <template>
     <div class="common-layout">
       <profile id="Profile"/>
-
-              
-  
+      <works id="Works"/>
   </div>
 </template>
 
 <script lang="ts">
 import Profile from './Profile.vue';
+import Works from './Works.vue';
+import Research from './Research.vue';
 export default {
   name: 'home',
   components: {
     Profile,
+    Works,
+    Research,
   },
 };
 
