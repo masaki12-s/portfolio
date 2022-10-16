@@ -23,11 +23,7 @@ export default {
 
 <style>
 
-.profile {
-  font-size: 40px;
-  background-color: #97cdf3;
-  font-weight: bold;
-}
+
 .skill {
   background-color: #97cdf3;
   height:50px;

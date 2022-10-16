@@ -1,6 +1,6 @@
 <template>
     <el-container>
-        <el-header class="profile" height=70px>Profile</el-header>
+        <el-header class="profile" height>Sanada Masaki's    Profiles</el-header>
             <el-main>
                 <el-row>    
                     <el-col :span="12"><div class="grid-content ep-bg-purple-dark" />
@@ -14,10 +14,16 @@
                     <el-col :span="12">
                         <div class="grid-content ep-bg-purple-dark" />
                         <h2> 学歴　</h2>
-                            <el-table :data="tableData" style="width: 100%" >
+                            <el-table :data="tableData" style="width: 120%" >
                                 <el-table-column prop="year_month" label="year_month" width="120" />
                                 <el-table-column prop="school" label="School" width="400" />
-                                <el-table-column prop="info" label="Info" />
+                                <el-table-column prop="info" label="Info"  />
+                            </el-table>
+                        <h2> インターン経歴 </h2>
+                            <el-table :data="intern" style="width: 100%" >
+                                <el-table-column prop="year_month" label="year_month" width="120" />
+                                <el-table-column prop="company" label="company" width="400" />
+                                <el-table-column prop="about" label="about" />
                             </el-table>
                     </el-col>                   
                 </el-row>           
@@ -25,8 +31,24 @@
       </el-container>
 </template>
 
+<style scoped>
+.profile {
+  font-size: 50px;
+  background-color: #97cdf3;
+  font-weight: bold;
+}
+</style>
   
-  <script lang="ts" setup>
+<script lang="ts" setup>
+import internal from 'stream';
+
+  const intern = [
+    {
+      company:'qq',
+      year_month:'2022年8月',
+      about:"",
+    }
+  ]
   const tableData = [
     {
       year_month: '2015年4月',
