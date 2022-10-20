@@ -80,7 +80,7 @@ import internal from 'stream';
     },
     {
       year_month: '2022年4月',
-      school: '奈良先端科学技術大学　先端科学技術研究科',
+      school: '奈良先端科学技術大学院大学　先端科学技術研究科',
       info: '入学',
     },
   ]
