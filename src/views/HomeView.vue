@@ -3,6 +3,7 @@
     <div class="common-layout">
       <profile id="Profile"/>
       <works id="Works"/>
+      <cv id="CV"/>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Profile from './Profile.vue';
 import Works from './Works.vue';
 import Research from './Research.vue';
+import CurriculumVitae from './CurriculumVitae.vue';
 export default {
   name: 'home',
   components: {
     Profile,
     Works,
     Research,
+    CurriculumVitae,
   },
 };
 

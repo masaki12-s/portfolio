@@ -1,7 +1,8 @@
 <template>
   <nav>
     <router-link to="/portfolio">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/cv">cv</router-link> |
   </nav>
   <router-view/>
 </template>
@@ -17,6 +18,7 @@
 
 nav {
   padding: 30px;
+  background-color:#26e690;
 }
 
 nav a {
