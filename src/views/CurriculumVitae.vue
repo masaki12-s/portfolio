@@ -1,13 +1,13 @@
 <template>
     <div class="grid-content ep-bg-purple-dark" />
-    <h2> 学歴　</h2>
-        <el-table :data="education" style="width: 80%" >
+    <h2 style="text-align: left;"> 学歴</h2>
+        <el-table :data="education" style="width: 600px" >
             <el-table-column prop="year_month" label="year_month" width="120" />
-            <el-table-column prop="school" label="School" width="500" />
+            <el-table-column prop="school" label="School" width="375" />
             <el-table-column prop="info" label="Info"  />
         </el-table>
 
-    <h2> インターン経歴 </h2>
+    <h2 style="text-align: left;"> インターン経歴 </h2>
         <el-table :data="intern" style="width: 80%" >
             <el-table-column prop="year_month" label="year_month" width="120" />
             <el-table-column prop="company" label="company" width="400" />

@@ -9,13 +9,18 @@
         router=true
       >
         <el-menu-item index="/portfolio">Home</el-menu-item>
+
         <el-menu-item index="/works">Works</el-menu-item>
         <el-menu-item index="/cv" >Curriculum Vitae</el-menu-item>
         <el-menu-item index="4">Works</el-menu-item>
       </el-menu>
     </el-header>
     <el-container>
-      <el-aside width="200px">Aside</el-aside>
+      <el-aside width="150px">
+        Sanada Masaki
+       
+		
+      </el-aside>
       <el-main>
         <router-view/>
       </el-main>

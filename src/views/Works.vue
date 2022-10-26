@@ -15,10 +15,10 @@
             </el-col>
   
             <el-col :span="12">
-                <el-card class="box-card" :body-style="{ padding: '0px' }">
+                <el-card class="box-card" :body-style="{ padding: '10px' }">
                     <!-- <div class="card-header"> -->
                         <b>分野</b>
-                        <el-scrollbar height="400px">
+                        <el-scrollbar height="200px">
                             <p v-for="item in field" :key="item" class="scrollbar-demo-item">{{ item }}</p>
                         </el-scrollbar>
                     
@@ -41,15 +41,14 @@ export default {
         }
     }
 }
-    
 </script>
 <style scoped>
 .scrollbar-demo-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  margin: 10px;
+  height: 100px;
+  margin: 20px;
   text-align: center;
   border-radius: 4px;
   background: var(--el-color-primary-light-9);
