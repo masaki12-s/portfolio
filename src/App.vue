@@ -1,12 +1,40 @@
 <template>
-  <nav>
+  <!-- <nav>
     <router-link to="/portfolio">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/cv">cv</router-link> |
   </nav>
-  <router-view/>
-</template>
+  <router-view/> -->
 
+  <el-menu
+    :default-active="activeIndex"
+    class="el-menu-demo"
+    mode="horizontal"
+    router=true
+  >
+    <el-menu-item index="/portfolio">Home</el-menu-item>
+    <el-menu-item index="/About">About</el-menu-item>
+
+    <el-menu-item index="/cv" >Curriculum Vitae</el-menu-item>
+    <el-menu-item index="4">Orders</el-menu-item>
+  </el-menu>
+<router-view/>
+</template>
+<script lang="ts" setup>
+import { ref } from 'vue'
+const activeIndex = ref('1')
+
+// export default {
+//   data() {
+//     return {
+//       activeIndex: '',
+//     }
+//   },
+//   mounted() {
+//     this.activeIndex = this.$route.name;
+//   }
+// }
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
