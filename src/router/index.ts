@@ -19,6 +19,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/cv',
     name: 'cv',
     component: () => import('../views/CurriculumVitae.vue')
+  },
+  {
+    path: '/skills',
+    name: 'skills',
+    component: () => import('../views/Skills.vue')
   }
 ]
 
