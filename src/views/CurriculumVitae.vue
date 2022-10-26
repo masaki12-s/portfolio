@@ -1,18 +1,18 @@
 <template>
     <div class="grid-content ep-bg-purple-dark" />
     <h2> 学歴　</h2>
-        <el-table :data="tableData" style="width: 1000%" >
+        <el-table :data="education" style="width: 80%" >
             <el-table-column prop="year_month" label="year_month" width="120" />
-            <el-table-column prop="school" label="School" width="400" />
+            <el-table-column prop="school" label="School" width="500" />
             <el-table-column prop="info" label="Info"  />
         </el-table>
+
     <h2> インターン経歴 </h2>
-        <el-table :data="intern" style="width: 100%" >
+        <el-table :data="intern" style="width: 80%" >
             <el-table-column prop="year_month" label="year_month" width="120" />
             <el-table-column prop="company" label="company" width="400" />
             <el-table-column prop="about" label="about" />
         </el-table>
-            
 </template>
 <script lang="ts" setup>
   const intern = [
@@ -22,7 +22,7 @@
       about:"",
     }
   ]
-  const tableData = [
+  const education = [
     {
       year_month: '2015年4月',
       school: '奈良工業高等専門学校　情報工学科',
