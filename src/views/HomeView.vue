@@ -7,16 +7,10 @@
 
 <script lang="ts">
 import Profile from './Profile.vue';
-import Works from './Works.vue';
-import Research from './Research.vue';
-import CurriculumVitae from './CurriculumVitae.vue';
 export default {
   name: 'home',
   components: {
     Profile,
-    Works,
-    Research,
-    CurriculumVitae,
   },
 };
 
