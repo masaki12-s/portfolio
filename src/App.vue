@@ -1,23 +1,31 @@
 <template>
-  <!-- <nav>
-    <router-link to="/portfolio">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/cv">cv</router-link> |
-  </nav>
-  <router-view/> -->
+<div class="common-layout">
+  <el-container>
+    <el-header>
+      <el-menu
+        :default-active="activeIndex"
+        class="el-menu-demo"
+        mode="horizontal"
+        router=true
+      >
+        <el-menu-item index="/portfolio">Home</el-menu-item>
+        <el-menu-item index="/works">Works</el-menu-item>
+        <el-menu-item index="/cv" >Curriculum Vitae</el-menu-item>
+        <el-menu-item index="4">Works</el-menu-item>
+      </el-menu>
+    </el-header>
+    <el-container>
+      <el-aside width="200px">Aside</el-aside>
+      <el-main>
+        <router-view/>
+      </el-main>
+    </el-container>
+  </el-container>
+  
 
-  <el-menu
-    :default-active="activeIndex"
-    class="el-menu-demo"
-    mode="horizontal"
-    router=true
-  >
-    <el-menu-item index="/portfolio">Home</el-menu-item>
-    <el-menu-item index="/works">Works</el-menu-item>
-    <el-menu-item index="/cv" >Curriculum Vitae</el-menu-item>
-    <el-menu-item index="4">Works</el-menu-item>
-  </el-menu>
-<router-view/>
+   
+</div>
+  
 </template>
 
 <script lang="ts" setup>

@@ -2,8 +2,6 @@
 <template>
     <div class="common-layout">
       <profile id="Profile"/>
-      <works id="Works"/>
-      <cv id="CV"/>
   </div>
 </template>
 
