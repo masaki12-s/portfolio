@@ -9,10 +9,11 @@
         router=true
       >
         <el-menu-item index="/portfolio">Home</el-menu-item>
-
-        <el-menu-item index="/works">Works</el-menu-item>
         <el-menu-item index="/cv" >Curriculum Vitae</el-menu-item>
-        <el-menu-item index="4">Works</el-menu-item>
+        <el-menu-item index="/skills">Skills</el-menu-item>
+        <el-menu-item index="/works">Works</el-menu-item>
+        
+        
       </el-menu>
     </el-header>
     <el-container>
