@@ -3,29 +3,12 @@
         <p style="font-size:40px;font-weight: bold;">works</p>
     </el-header>
     <el-main>
-        <el-row>
-            <el-col :span="12">
-                <el-card class="box-card" :body-style="{ padding: '10px' }">
-                  <b>プログラミング言語</b>
-                  <el-scrollbar height="400px">
-                    <p v-for="item in language" :key="item" class="scrollbar-demo-item">{{ item }}</p>
-                </el-scrollbar>
+        <el-row>            
+            <el-card class="box-card" :body-style="{ padding: '10px' }">
+                <b>プログラミング言語</b>
+                <p v-for="item in language" :key="item" class="scrollbar-demo-item">{{ item }}</p>
+            </el-card>
 
-                </el-card>
-            </el-col>
-  
-            <el-col :span="12">
-                <el-card class="box-card" :body-style="{ padding: '10px' }">
-                    <!-- <div class="card-header"> -->
-                        <b>分野</b>
-                        <el-scrollbar height="200px">
-                            <p v-for="item in field" :key="item" class="scrollbar-demo-item">{{ item }}</p>
-                        </el-scrollbar>
-                    
-                    <div> 
-                    </div>
-                </el-card>
-            </el-col>
         </el-row>
         
     </el-main>
@@ -36,11 +19,18 @@
 export default {
     data: () => {
         return {
-            language: ["Python3", "Java", "C#"],
+            language: [prolanguage],
             field: ["Network", "machineLeaning", "Git", "AWS"],
         }
     }
 }
+const prolanguage = [
+    {
+      language: 'Python3',
+      duration: '5',
+      about: '入学',
+    },
+  ]
 </script>
 <style scoped>
 .scrollbar-demo-item {
