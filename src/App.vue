@@ -17,7 +17,7 @@
         mode="horizontal"
         router=true
       >
-        <el-menu-item route="/portfolio">Home</el-menu-item>
+        <el-menu-item route="/">Home</el-menu-item>
         <el-menu-item route="/cv">Curriculum Vitae</el-menu-item>
         <el-menu-item route="/skills">Skills</el-menu-item>
         <!-- <el-menu-item index="/works">Works</el-menu-item> -->
