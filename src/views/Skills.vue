@@ -3,21 +3,21 @@
         <p style="font-size:40px;font-weight: bold;">skills</p>
     </el-header>
     <el-main>
-        <h2 style="text-align: left;"> 自信のあるプログラミング言語 </h2>
+        <h2 style="text-align: left; margin-top: 10px;"> 自信のあるプログラミング言語 </h2>
         <el-table :data="prolanguage" style="width: 80%" >
             <el-table-column prop="language" label="Language" header-align="center" align="center" width="100" />
             <el-table-column prop="duration" label="期間" header-align="center" align="center" width="100" />
             <el-table-column prop="about" label="about"/>
         </el-table>
-        <h2 style="text-align: left;"> 使ったことのあるプログラミング言語 </h2>
+        <h2 style="text-align: left; margin-top: 50px;"> 使ったことのあるプログラミング言語 </h2>
         <el-table :data="easelanguage" style="width: 80%" >
             <el-table-column prop="language" label="Language" header-align="center" align="center" width="100" />
             <el-table-column prop="duration" label="期間" header-align="center" align="center" width="100" />
             <el-table-column prop="about" label="about"/>
         </el-table>
-        <h2 style="text-align: left;"> Webフレームワーク </h2>
-        <el-table :data="webframework" style="width: 80%" >
-            <el-table-column prop="name" label="name" header-align="center" align="center" width="150" />
+        <h2 style="text-align: left; margin-top: 50px;"> Webフレームワーク </h2>
+        <el-table :data="webframework" style="width: 80%;" >
+            <el-table-column prop="name" label="name" header-align="center" align="center" width="100" />
             <el-table-column prop="about" label="about"/>
         </el-table>
     </el-main>
@@ -39,7 +39,7 @@
         {
         language: 'C#',
         duration: '2年',
-        about: '',
+        about: 'Unity開発',
         },
     ]
   const easelanguage = [
