@@ -17,11 +17,11 @@
 const prolanguage = [
     {
       language: 'Python3',
-      about: '',
+      about: '趣味・研究で使用',
     },
     {
       language: 'Java',
-      about: '',
+      about: 'Swingによるお絵描きソフト開発',
     },
     {
       language: 'Go',
