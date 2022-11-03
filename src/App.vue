@@ -53,17 +53,6 @@ const activeIndex = ref('1')
 .name {
   margin-top: 30px;
 }
-nav {
-  padding: 30px;
-  background-color:#26e690;
-}
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
