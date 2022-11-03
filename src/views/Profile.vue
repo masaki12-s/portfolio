@@ -2,17 +2,12 @@
     <el-container>
         <el-header class="profile" height>Sanada Masaki's    Profiles</el-header>
             <el-main>
-                <el-row>    
-                    <el-col :span="12"><div class="grid-content ep-bg-purple-dark" />
                        <p class="name">NAME: 眞田将希 (Sanada Masaki) </p><br>
                         Age 22 <br>
                         趣味：PC触る、食べ物フェスいく<br>
                         目標：就活終わらせて、欲しいもの（時計、macbook）を買う<br>
                         旅行行く  <br>
-                    </el-col>
-                    
-                      
-                </el-row>           
+
             </el-main>
       </el-container>
 </template>
