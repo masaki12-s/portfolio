@@ -1,6 +1,10 @@
 <template>
 <div class="common-layout">
   <el-container>
+    <el-aside width="150px">
+        Sanada Masaki
+    </el-aside>
+    <el-container>
     <el-header>
       <el-menu
         :default-active="activeIndex"
@@ -12,16 +16,9 @@
         <el-menu-item index="/cv" >Curriculum Vitae</el-menu-item>
         <el-menu-item index="/skills">Skills</el-menu-item>
         <el-menu-item index="/works">Works</el-menu-item>
-        
-        
+
       </el-menu>
     </el-header>
-    <el-container>
-      <el-aside width="150px">
-        Sanada Masaki
-       
-		
-      </el-aside>
       <el-main>
         <router-view/>
       </el-main>
