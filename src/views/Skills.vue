@@ -8,7 +8,11 @@
             <el-table-column prop="language" label="Language" header-align="center" align="center" width="150" />
             <el-table-column prop="about"  header-align="center" label="about"/>
         </el-table>
-        
+        <h2 style="text-align: left;"> Webフレームワーク </h2>
+        <el-table :data="webframework" style="width: 80%" >
+            <el-table-column prop="name" label="name" header-align="center" align="center" width="150" />
+            <el-table-column prop="about"  header-align="center" label="about"/>
+        </el-table>
     </el-main>
      
 </template>
@@ -35,6 +39,11 @@ const prolanguage = [
       language: 'C',
       about: '',
     },
-
   ]
+const webframework = [
+    {
+        name:"",
+        about:"",
+    }
+]
 </script>
