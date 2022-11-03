@@ -21,13 +21,13 @@
       company:'',
       year_month:'2022年8月',
       duration:'1週間',
-      about:"",
+      about:"TypeScriptとVue.jsと独自APIを用いたWeb製作",
     },
     {
       company:'株式会社リクルート',
       year_month:'2022年11月',
       duration:"1ヶ月",
-      about:"",
+      about:"TBD",
     }
   ]
   const education = [
