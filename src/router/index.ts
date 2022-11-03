@@ -8,12 +8,12 @@ const routes: Array<RouteRecordRaw> = [
     component: HomeView
   },
   {
-    path: '/cv',
+    path: '/portfolio/cv',
     name: 'cv',
     component: () => import('../views/CurriculumVitae.vue')
   },
   {
-    path: '/skills',
+    path: '/portfolio/skills',
     name: 'skills',
     component: () => import('../views/Skills.vue')
   }
