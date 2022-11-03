@@ -22,9 +22,5 @@
   font-size:20px;
   font-weight: bold;
 }
-
-.hobby {
-
-}
 </style>
   
