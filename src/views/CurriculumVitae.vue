@@ -18,7 +18,7 @@
 <script lang="ts" setup>
   const intern = [
     {
-      company:'',
+      company:'株式会社いい生活',
       year_month:'2022年8月',
       duration:'1週間',
       about:"TypeScriptとVue.jsと独自APIを用いたWeb製作",
