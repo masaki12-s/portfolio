@@ -21,7 +21,6 @@
             <el-table-column prop="about" label="about"/>
         </el-table>
     </el-main>
-     
 </template>
 
 <script lang="ts" setup>
@@ -69,3 +68,9 @@ const webframework = [
     }
 ]
 </script>
+
+<style scoped>
+body {
+  margin: 30px;
+}
+</style>

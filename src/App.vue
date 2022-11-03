@@ -24,7 +24,7 @@
 
       </el-menu>
     </el-header>
-      <el-main>
+      <el-main >
         <router-view/>
       </el-main>
     </el-container>
