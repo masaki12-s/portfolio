@@ -2,12 +2,25 @@
     <el-container>
         <el-header class="profile" height>Sanada Masaki's    Profiles</el-header>
             <el-main>
-                       <p class="name">NAME: 眞田将希 (Sanada Masaki) </p><br>
+              <el-row>
+              <el-col :span="12">
+                <img src="../assets/icon.jpg" style="width:80%;" />
+                <p class="name">NAME: 眞田将希 (Sanada Masaki) </p><br>
+              </el-col>
+              <el-col :span="12">
+                       
+                       <p>奈良先端科学技術大学院大学　在学中
+                       ネットワークの研究室に属しています。
+                       現在APIについて学習中
+                       バックエンドエンジニアorインフラエンジニアを目指して就活中です。
+                      </p>
+                        <br>
                         Age 22 <br>
                         趣味：PC触る、食べ物フェスいく<br>
                         目標：就活終わらせて、欲しいもの（時計、macbook）を買う<br>
                         旅行行く  <br>
-
+              </el-col>
+            </el-row>
             </el-main>
       </el-container>
 </template>
