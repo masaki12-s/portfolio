@@ -1,47 +1,40 @@
 <template>
     <el-header>
-        <p style="font-size:40px;font-weight: bold;">works</p>
+        <p style="font-size:40px;font-weight: bold;">skills</p>
     </el-header>
     <el-main>
-        <el-row>            
-            <el-card class="box-card" :body-style="{ padding: '10px' }">
-                <b>プログラミング言語</b>
-                <p v-for="item in language" :key="item" class="scrollbar-demo-item">{{ item }}</p>
-            </el-card>
-
-        </el-row>
+        <h2 style="text-align: left;"> プログラミング言語 </h2>
+        <el-table :data="prolanguage" style="width: 80%" >
+            <el-table-column prop="language" label="Language" header-align="center" align="center" width="150" />
+            <el-table-column prop="about"  header-align="center" label="about"/>
+        </el-table>
         
     </el-main>
      
 </template>
 
-<script lang="ts">
-export default {
-    data: () => {
-        return {
-            language: [prolanguage],
-            field: ["Network", "machineLeaning", "Git", "AWS"],
-        }
-    }
-}
+<script lang="ts" setup>
 const prolanguage = [
     {
       language: 'Python3',
-      duration: '5',
-      about: '入学',
+      about: '',
     },
+    {
+      language: 'Java',
+      about: '',
+    },
+    {
+      language: 'Go',
+      about: '',
+    },
+    {
+      language: 'C#',
+      about: '',
+    },
+    {
+      language: 'C',
+      about: '',
+    },
+
   ]
 </script>
-<style scoped>
-.scrollbar-demo-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
-  margin: 20px;
-  text-align: center;
-  border-radius: 4px;
-  background: var(--el-color-primary-light-9);
-  color: var(--el-color-primary);
-}
-</style>
