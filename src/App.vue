@@ -17,14 +17,14 @@
     <el-container>
     <el-header>
       <el-menu
-        :default-active="activeIndex"
+        :default-active=$route.name
         class="el-menu-demo"
         mode="horizontal"
-        router=true
+        router="true"
       >
-        <el-menu-item index="/">Home</el-menu-item>
-        <el-menu-item index="/cv">Curriculum Vitae</el-menu-item>
-        <el-menu-item index="/skills">Skills</el-menu-item>
+        <el-menu-item :route="{name:'home'}">Home</el-menu-item>
+        <el-menu-item :route="{name:'cv'}">Curriculum Vitae</el-menu-item>
+        <el-menu-item :route="{name:'skills'}">Skills</el-menu-item>
         <!-- <el-menu-item index="/works">Works</el-menu-item> -->
 
       </el-menu>
