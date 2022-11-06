@@ -1,4 +1,4 @@
 # portfolio
 
 ### GitHub Pages LINK
-https://masaki12-s.github.io/portfolio
+https://masaki12-s.github.io
