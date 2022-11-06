@@ -36,6 +36,7 @@
 .name {
   font-size:20px;
   font-weight: bold;
+  text-align: center;
 }
 p {
   text-align: left;
