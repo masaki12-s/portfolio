@@ -15,35 +15,30 @@
         
     </el-aside>
     <el-container>
-    <el-header>
-      <el-menu
-        :default-active=$route.name
-        class="el-menu-demo"
-        mode="horizontal"
-        router="true"
-      >
-        <el-menu-item :route="{name:'home'}">Home</el-menu-item>
-        <el-menu-item :route="{name:'cv'}">Curriculum Vitae</el-menu-item>
-        <el-menu-item :route="{name:'skills'}">Skills</el-menu-item>
-        <!-- <el-menu-item index="/works">Works</el-menu-item> -->
-
-      </el-menu>
-    </el-header>
-      <el-main >
-        <router-view/>
+      <el-header>
+        <el-menu
+          :default-active="activeIndex"
+          class="el-menu-demo"
+          mode="horizontal"
+          router="true"
+        >
+          <el-menu-item index="home">Home</el-menu-item>
+          <el-menu-item index="cv">Curriculum Vitae</el-menu-item>
+          <el-menu-item index="skills">Skills</el-menu-item>
+          <!-- <el-menu-item index="/works">Works</el-menu-item> -->
+        </el-menu>
+      </el-header>
+      <el-main>
+        <router-view />
       </el-main>
     </el-container>
   </el-container>
-  
-
-   
 </div>
-  
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-const activeIndex = ref('1')
+const activeIndex = ref('home')
 </script>
 
 <style>
@@ -58,6 +53,4 @@ const activeIndex = ref('1')
 .me {
   margin-top: 30px;
 }
-
-
 </style>
