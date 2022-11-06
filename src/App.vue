@@ -38,7 +38,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-const activeIndex = ref('home')
+const activeIndex = ref('/')
 </script>
 
 <style>
