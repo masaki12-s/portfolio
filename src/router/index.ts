@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
+  //{ path: '/', redirect: '/home'}
   {
-    path: '/home',
+    path: '/',
     name: 'home',
     component: () => import('../views/Profile.vue'),
   },
