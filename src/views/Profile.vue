@@ -33,6 +33,18 @@
                       </ul>
                     </p>
                   </div>
+                <h2> todo </h2>
+                  <div class="box">
+                    <div class="flex justify-space-between mb-4 flex-wrap gap-4">
+                      <!-- <el-button link="/Skills">詳細はこちら</el-button> -->
+                    </div>
+                    <p>
+                      <ul>
+                        <li> i18n </li>
+                        <li> add social icon </li>
+                      </ul>
+                    </p>
+                  </div>
               </el-col>
             </el-row>
             </el-main>
@@ -67,9 +79,7 @@ li {
   border-radius: 10px; /*角丸の指定*/
 }
 .box p {
-margin:0;
-padding:0;
+  margin-bottom: 10px;
 }
-
 </style>
   
