@@ -36,11 +36,6 @@
 </div>
 </template>
 
-<script lang="ts" setup>
-import { ref } from 'vue'
-const activeIndex = ref('/')
-</script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
