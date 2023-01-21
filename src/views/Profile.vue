@@ -4,7 +4,7 @@
             <el-main>
               <el-row>
               <el-col :span="12" style="margin:auto">
-                <img src="../assets/icon.jpg" style="width:30%;" /> <br>
+                <img src="../assets/icon.jpg" style="width:50%;" /> <br>
                 <p style="margin-top:10px; font-size: large; text-align: center;"><b> Sanada Masaki </b> </p><br>
               </el-col>
               <el-col :span="12">
