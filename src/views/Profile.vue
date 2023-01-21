@@ -3,19 +3,19 @@
         <!-- <el-header class="profile">Sanada Masaki's    Profiles</el-header> -->
             <el-main>
               <el-row>
-              <el-col :span="12">
+              <el-col :span="8">
                 <img src="../assets/icon.jpg" style="width:70%; margin-top: 10%; margin-right: 10%;" />
                 <p class="name">NAME: 眞田将希 (Sanada Masaki) </p><br>
               </el-col>
-              <el-col :span="12">
+              <el-col :span="16">
                 <h2> Introduction </h2>
                 <div class="box">
                   <p>
                     <ul>
-                      <li>name: 眞田将希</li>
+                      <li>name: 眞田将希 (Masaki Sanada)</li>
                       <li>age: 23</li>
-                      <li>所属: 奈良先端科学技術大学院大学 修士1年 </li>
-                      <li>趣味: PC?, 食べ物, 旅行</li>
+                      <li>Affiliation: 奈良先端科学技術大学院大学 (Nara Institute of Science and Technology)  M1</li>
+                      <li>hobby: PC works, trip</li>
                     </ul>
                   </p>
                 </div>
@@ -26,10 +26,10 @@
                     </div>
                     <p>
                       <ul>
-                        <li> Web開発 </li>
-                        <li> サーバ管理 </li>
+                        <li> Web development </li>
+                        <li> server management </li>
                         <li> Git, Docker </li>
-                        <li> DevOps(特にCI/CD)に興味あり </li>
+                        <li> interested in DevOps (mainly CI/CD)</li>
                       </ul>
                     </p>
                   </div>
