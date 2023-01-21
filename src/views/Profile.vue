@@ -45,6 +45,7 @@
                       </ul>
                     </p>
                   </div>
+
               </el-col>
             </el-row>
             </el-main>
@@ -80,6 +81,11 @@ li {
 }
 .box p {
   margin-bottom: 10px;
+}
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
 }
 </style>
   
