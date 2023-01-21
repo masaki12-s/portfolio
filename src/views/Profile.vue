@@ -23,7 +23,7 @@
                     <ul>
                       <li>name: 眞田将希 (Masaki Sanada)</li>
                       <li>age: 23</li>
-                      <li>Affiliation: 奈良先端科学技術大学院大学 (Nara Institute of Science and Technology)  M1</li>
+                      <li>Affiliation: NAIST M1</li>
                       <li>hobby: PC works, trip</li>
                     </ul>
                   </p>
@@ -96,6 +96,7 @@ li {
 }
 .box p {
   margin-bottom: 10px;
+  font-weight: bold;
 }
 .title {
   text-align: center;
