@@ -3,13 +3,13 @@
         <p style="font-size:40px;font-weight: bold;">skills</p>
     </el-header>
     <el-main>
-        <h2 style="text-align: left; margin-top: 10px;"> 自信のあるプログラミング言語 </h2>
+        <h2 style="text-align: left; margin-top: 10px;"> 使用可能プログラミング言語 </h2>
         <el-table :data="prolanguage" style="width: 80%" >
             <el-table-column prop="language" label="Language" header-align="center" align="center" width="100" />
             <el-table-column prop="duration" label="期間" header-align="center" align="center" width="100" />
             <el-table-column prop="about" label="about"/>
         </el-table>
-        <h2 style="text-align: left; margin-top: 50px;"> 使ったことのあるプログラミング言語 </h2>
+        <h2 style="text-align: left; margin-top: 50px;"> 触った程度のプログラミング言語 </h2>
         <el-table :data="easelanguage" style="width: 80%" >
             <el-table-column prop="language" label="Language" header-align="center" align="center" width="100" />
             <el-table-column prop="duration" label="期間" header-align="center" align="center" width="100" />
@@ -20,10 +20,24 @@
             <el-table-column prop="name" label="name" header-align="center" align="center" width="100" />
             <el-table-column prop="about" label="about"/>
         </el-table>
+        <h2 style="text-align: left; margin-top: 50px;"> その他 </h2>
+        <p style="text-align: left;">
+            <ul>
+                <li> git </li>
+                <li> github actions </li>
+                <li> Docker</li>
+                <li> Kubernetes </li>
+                <li> Ansible </li>
+                <li> Jenkins </li>
+            </ul>
+        </p>
+        
     </el-main>
 </template>
 
 <script lang="ts" setup>
+import { getInnerRange } from '@vue/compiler-core';
+
     const prolanguage = [
         {
         language: 'Python3',
@@ -41,32 +55,54 @@
         about: 'Unity開発',
         },
     ]
-  const easelanguage = [
-    {
-      language: 'Go',
-      duration: '半年',
-      about: 'API作成',
-    },
-    {
-      language: 'C',
-      duration: '1年',
-      about: '授業',
-    },
-  ]
-const webframework = [
-    {
-        name: "Django",
-        about: "Docor開発",
-    },
-    {
-        name: "Flask",
-        about: "在庫管理APIの作成",
-    },
-    {
-        name: "Vue.js",
-        about: "ポートフォリオ",
-    }
-]
+    const easelanguage = [
+        {
+        language: 'Go',
+        duration: '半年',
+        about: 'API作成',
+        },
+        {
+        language: 'C',
+        duration: '1年',
+        about: '授業',
+        },
+    ]
+    const webframework = [
+        {
+            name: "Django",
+            about: "Docor開発",
+        },
+        {
+            name: "Flask",
+            about: "在庫管理APIの作成",
+        },
+        {
+            name: "Vue.js",
+            about: "ポートフォリオ",
+        }
+    ]
+    const Others = [
+        {
+            name: "git",
+            about: "",
+        },
+        {
+            name: "github actions",
+        },
+        {
+            name: ""
+        },
+        {
+            name: "Ansible",
+        },
+        {
+            name: "Jenkins",
+        },
+        {
+            name: "Kubernetes",
+
+        }
+    ]
 </script>
 
 <style scoped>
