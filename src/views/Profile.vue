@@ -3,16 +3,20 @@
         <!-- <el-header class="profile">Sanada Masaki's    Profiles</el-header> -->
             <el-main>
               <el-row>
-              <el-col :span="8">
-                <img src="../assets/icon.jpg" style="width:70%; margin-top: 10%;" /> <br>
-                <b>Sanada Masaki </b><br>
-              
+              <el-col :span="12">
+                <img src="../assets/icon.jpg" style="width:30%;" /> <br>
+                <p style="margin-top:10px; text-align: center;"><b> Sanada Masaki </b> </p><br>
+              </el-col>
+              <el-col :span="12">
+                <h2>Socials</h2>
+                <div class="sns">
                 <el-link href="https://twitter.com/ma_rururu12" type="primary">Twitter</el-link> <br>
                 <el-link href="https://www.instagram.com/script1204/" type="warning">instagram</el-link> <br>
-                <el-link href="https://github.com/masaki12-s" type="danger">Github</el-link> <br>
+                <el-link href="https://github.com/masaki12-s" type="info">Github</el-link> <br>
                 <el-link href="https://qiita.com/masaki12-s" type="success">Qiita</el-link> <br>
+                </div>
               </el-col>
-              <el-col :span="16">
+            </el-row>
                 <h2> Introduction </h2>
                 <div class="box">
                   <p>
@@ -50,9 +54,6 @@
                       </ul>
                     </p>
                   </div>
-
-              </el-col>
-            </el-row>
             </el-main>
       </el-container>
 </template>
@@ -78,6 +79,15 @@ ul {
 li {
   font-size: large; 
 }
+.sns {
+  background:#ebe9e9; /*背景色の指定*/
+  border: #adbdf1 1px solid; /*境界線の指定*/
+  padding:10px;
+  border-radius: 10px; /*角丸の指定*/
+}
+.sns p {
+  margin-bottom: 10px;
+}
 .box {
   background:#dcedf8; /*背景色の指定*/
   border: #adbdf1 1px solid; /*境界線の指定*/
@@ -89,6 +99,10 @@ li {
 }
 .title {
   text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
+.el-link {
   font-weight: bold;
   font-size: large;
 }
