@@ -4,8 +4,13 @@
             <el-main>
               <el-row>
               <el-col :span="8">
-                <img src="../assets/icon.jpg" style="width:70%; margin-top: 10%; margin-right: 10%;" />
-                <p class="name">NAME: 眞田将希 (Sanada Masaki) </p><br>
+                <img src="../assets/icon.jpg" style="width:70%; margin-top: 10%;" /> <br>
+                <b>Sanada Masaki </b><br>
+              
+                <el-link href="https://twitter.com/ma_rururu12" type="primary">Twitter</el-link> <br>
+                <el-link href="https://www.instagram.com/script1204/" type="warning">instagram</el-link> <br>
+                <el-link href="https://github.com/masaki12-s" type="danger">Github</el-link> <br>
+                <el-link href="https://qiita.com/masaki12-s" type="success">Qiita</el-link> <br>
               </el-col>
               <el-col :span="16">
                 <h2> Introduction </h2>
