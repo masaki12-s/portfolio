@@ -38,7 +38,7 @@
                         <li> Web development </li>
                         <li> server management </li>
                         <li> Git, Docker </li>
-                        <li> interested in DevOps (mainly CI/CD)</li>
+                        <li> interested in <b>DevOps (mainly CI/CD)</b></li>
                       </ul>
                     </p>
                   </div>
@@ -96,7 +96,6 @@ li {
 }
 .box p {
   margin-bottom: 10px;
-  font-weight: bold;
 }
 .title {
   text-align: center;
