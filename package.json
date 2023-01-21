@@ -7,9 +7,11 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@growthbunker/vuesocial": "^0.1.2",
     "element-plus": "^2.2.14",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.0.3",
+    "vuetify": "^3.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-router": "~5.0.0",
