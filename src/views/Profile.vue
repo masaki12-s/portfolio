@@ -3,9 +3,9 @@
         <!-- <el-header class="profile">Sanada Masaki's    Profiles</el-header> -->
             <el-main>
               <el-row>
-              <el-col :span="12">
+              <el-col :span="12" style="margin:auto">
                 <img src="../assets/icon.jpg" style="width:30%;" /> <br>
-                <p style="margin-top:10px; text-align: center;"><b> Sanada Masaki </b> </p><br>
+                <p style="margin-top:10px; font-size: large; text-align: center;"><b> Sanada Masaki </b> </p><br>
               </el-col>
               <el-col :span="12">
                 <h2>Socials</h2>
