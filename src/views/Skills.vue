@@ -37,7 +37,6 @@
 
 <script lang="ts" setup>
 import { getInnerRange } from '@vue/compiler-core';
-
     const prolanguage = [
         {
         language: 'Python3',
@@ -81,32 +80,10 @@ import { getInnerRange } from '@vue/compiler-core';
             about: "ポートフォリオ",
         }
     ]
-    const Others = [
-        {
-            name: "git",
-            about: "",
-        },
-        {
-            name: "github actions",
-        },
-        {
-            name: ""
-        },
-        {
-            name: "Ansible",
-        },
-        {
-            name: "Jenkins",
-        },
-        {
-            name: "Kubernetes",
-
-        }
-    ]
 </script>
 
 <style scoped>
 body {
-  margin: 30px;
+    margin: 30px;
 }
 </style>
