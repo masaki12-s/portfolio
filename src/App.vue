@@ -1,10 +1,9 @@
 <template>
 <div class="common-layout">
   <el-container>
-    <el-aside width="150px">
-        
+    <el-aside width="10%">
         <p class="me"> 
-          <img src="./assets/icon.jpg" style="width:70%; margin-bottom: 5px;"/>
+          <img src="./assets/icon.jpg" style="width:70%; margin-bottom: 5px;"/> <br>
           <b>Sanada Masaki </b><br>
         </p>
         <el-link href="https://twitter.com/ma_rururu12" type="primary">Twitter</el-link> <br>
