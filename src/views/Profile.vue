@@ -1,26 +1,38 @@
 <template>
     <el-container>
-        <el-header class="profile" height>Sanada Masaki's    Profiles</el-header>
+        <!-- <el-header class="profile">Sanada Masaki's    Profiles</el-header> -->
             <el-main>
               <el-row>
               <el-col :span="12">
-                <img src="../assets/icon.jpg" style="width:80%;" />
+                <img src="../assets/icon.jpg" style="width:70%; margin-top: 10%; margin-right: 10%;" />
                 <p class="name">NAME: 眞田将希 (Sanada Masaki) </p><br>
               </el-col>
               <el-col :span="12">
-                       
-                       <p>
-                        現在<b>奈良先端科学技術大学院大学</b> 在学中。
-                        <b>ネットワーク</b>の研究室に属しており，Wi-Fi等の電波強度を用いた屋内測位に関する研究を行っております。
-                        <br>
-                       現在APIについて学習中。
-                       バックエンドエンジニアorインフラエンジニアを目指して就活中です。
-                      </p>
-                        <br>
-                        Age 22 <br>
-                        趣味：PC触る、食べ物フェスいく<br>
-                        目標：就活終わらせて、欲しいもの（時計、macbook）を買う<br>
-                        旅行行く  <br>
+                <h2> Introduction </h2>
+                <div class="box">
+                  <p>
+                    <ul>
+                      <li>name: 眞田将希</li>
+                      <li>age: 23</li>
+                      <li>所属: 奈良先端科学技術大学院大学 修士1年 </li>
+                      <li>趣味: PC?, 食べ物, 旅行</li>
+                    </ul>
+                  </p>
+                </div>
+                <h2> stacks </h2>
+                  <div class="box">
+                    <div class="flex justify-space-between mb-4 flex-wrap gap-4">
+                      <el-button link="/Skills">詳細はこちら</el-button>
+                    </div>
+                    <p>
+                      <ul>
+                        <li> Web開発 </li>
+                        <li> サーバ管理 </li>
+                        <li> Git, Docker </li>
+                        <li> DevOps(特にCI/CD)に興味あり </li>
+                      </ul>
+                    </p>
+                  </div>
               </el-col>
             </el-row>
             </el-main>
@@ -34,12 +46,30 @@
   font-weight: bold;
 }
 .name {
-  font-size:20px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
+  margin-right: 10%;
 }
 p {
   text-align: left;
 }
+ul {
+  list-style-type: circle,
+}
+li {
+  font-size: 20px; 
+}
+.box {
+  background:#cacfff; /*背景色の指定*/
+  border: #adbdf1 1px solid; /*境界線の指定*/
+  padding:10px;
+  border-radius: 10px; /*角丸の指定*/
+}
+.box p {
+margin:0;
+padding:0;
+}
+
 </style>
   
