@@ -22,7 +22,7 @@
                 <h2> stacks </h2>
                   <div class="box">
                     <div class="flex justify-space-between mb-4 flex-wrap gap-4">
-                      <el-button link="/Skills">詳細はこちら</el-button>
+                      <!-- <el-button link="/Skills">詳細はこちら</el-button> -->
                     </div>
                     <p>
                       <ul>
@@ -61,7 +61,7 @@ li {
   font-size: 20px; 
 }
 .box {
-  background:#cacfff; /*背景色の指定*/
+  background:#dcedf8; /*背景色の指定*/
   border: #adbdf1 1px solid; /*境界線の指定*/
   padding:10px;
   border-radius: 10px; /*角丸の指定*/
