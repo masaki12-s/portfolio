@@ -1,7 +1,7 @@
 <template>
 <div class="common-layout">
   <el-container>
-    <el-aside width="10%">
+    <el-aside width="15%">
         <p class="me"> 
           <img src="./assets/icon.jpg" style="width:70%; margin-bottom: 5px;"/> <br>
           <b>Sanada Masaki </b><br>

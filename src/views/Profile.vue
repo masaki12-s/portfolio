@@ -59,7 +59,7 @@
   font-weight: bold;
 }
 .name {
-  font-size: 20px;
+  font-size: large;
   font-weight: bold;
   text-align: center;
   margin-right: 10%;
@@ -71,7 +71,7 @@ ul {
   list-style-type: circle,
 }
 li {
-  font-size: 20px; 
+  font-size: large; 
 }
 .box {
   background:#dcedf8; /*背景色の指定*/
