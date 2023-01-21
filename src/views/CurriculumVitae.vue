@@ -12,7 +12,14 @@
             <el-table-column prop="year_month" label="年月" header-align="center" align="center" width="120" />
             <el-table-column prop="company" label="会社名" header-align="center" align="center" width="200" />
             <el-table-column prop="duration" label="期間" header-align="center" align="center" width="120" />
-            <el-table-column prop="about" label="業務内容" header-align="center" align="center" />
+            <el-table-column prop="about" label="業務内容" header-align="center" align="left" />
+        </el-table>
+    <h2 style="text-align: left;"> アルバイト </h2>
+        <el-table :data="work" style="width: 80%" >
+            <el-table-column prop="year_month" label="年月" header-align="center" align="center" width="120" />
+            <el-table-column prop="company" label="会社名" header-align="center" align="center" width="200" />
+            <el-table-column prop="duration" label="期間" header-align="center" align="center" width="140" />
+            <el-table-column prop="about" label="業務内容" header-align="center" align="left" />
         </el-table>
 </template>
 <script lang="ts" setup>
@@ -27,7 +34,7 @@
       company:'株式会社リクルート',
       year_month:'2022年11月',
       duration:"1ヶ月",
-      about:"TBD",
+      about:"kubecostの検証",
     }
   ]
   const education = [
@@ -55,6 +62,14 @@
       year_month: '2022年4月',
       school: '奈良先端科学技術大学院大学　先端科学技術研究科',
       info: '入学',
+    },
+  ]
+  const work = [
+    {
+      year_month: '2022年9月',
+      company: "株式会社pinebase",
+      duration: "~ 2024 3月 予定",
+      about: "Docorシステム開発（Webシステム開発，サーバ管理等自由にやらせてもらってます）"
     },
   ]
   </script>
