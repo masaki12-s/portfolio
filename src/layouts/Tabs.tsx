@@ -2,7 +2,7 @@ import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import Home from './Home';
+import Home from '../components/Home';
 
 interface TabPanelProps {
     children?: React.ReactNode;
