@@ -1,4 +1,2 @@
-# portfolio
-
-### GitHub Pages LINK
-https://masaki12-s.github.io
+# masaki12-s portal site
+hoge
