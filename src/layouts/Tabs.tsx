@@ -3,6 +3,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Home from '../components/Home';
+import About from '../components/About';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -52,7 +53,7 @@ export default function Basictabs() {
                 <Home />
             </CustomTabPanel>
             <CustomTabPanel value={value} index={1}>
-                About
+                <About />
             </CustomTabPanel>
         </Box>
     );
