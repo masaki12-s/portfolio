@@ -1,3 +1,4 @@
+import '../style/Outputs.css';
 interface BlogPost {
     title: string;
     url: string;
@@ -9,6 +10,11 @@ interface BlogSection {
         year: string;
         posts: BlogPost[];
     }[];
+}
+
+interface NotePost {
+    title: string;
+    url: string;
 }
 
 export default function Outputs() {
@@ -60,26 +66,46 @@ export default function Outputs() {
         }
     ];
 
+    const noteData: NotePost[] = [
+        {
+            title: "中学生に知ってほしい(奈良)高専について",
+            url: "https://note.com/rururu657/n/nf94a2a7a7905"
+        },
+    ];
+
     return (
         <div>
             <h2>TechBlog</h2>
-            {blogData.map(section => (
-                <section key={section.company}>
-                    <h3>{section.company}</h3>
-                    {section.years.map(yearGroup => (
-                        <div key={yearGroup.year}>
-                            <h4>{yearGroup.year}</h4>
-                            <ul>
-                                {yearGroup.posts.map(post => (
-                                    <li key={post.url}>
-                                        <a href={post.url}>{post.title}</a>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
-                </section>
-            ))}
+            <div className="tech-blog">
+                {blogData.map(section => (
+                    <section key={section.company}>
+                        <h3>{section.company}</h3>
+                        {section.years.map(yearGroup => (
+                            <div key={yearGroup.year}>
+                                <h4>{yearGroup.year}</h4>
+                                <ul>
+                                    <div className="blog-post">
+                                        {yearGroup.posts.map(post => (
+                                            <li key={post.url}>
+                                                <a href={post.url}>{post.title}</a>
+                                            </li>
+                                        ))}
+                                    </div>
+                                </ul>
+                            </div>
+                        ))}
+                    </section>
+                ))}
+            </div>
+            <h2>note</h2>
+            <div className="note">
+                {noteData.map(post => (
+                    <li key={post.url}>
+                        <a href={post.url}>{post.title}</a>
+                    </li>
+                ))}
+
+            </div>
         </div>
     );
 }

@@ -1,37 +1,40 @@
-import React from 'react';
+import '../style/Stacks.css';
+interface Stack {
+    name: string;
+    description: string[];
+}
 
 export default function Stacks() {
-    return (
-        <div>
-            <h2>技術スタック</h2>
-            <table style={{ width: '100%', marginLeft: 10/20 }}>
-                <tbody>
-                <th>Programming Language</th>
-                    <tr>
-                        Python
-                    </tr>
-                    <tr>
-                        Go
-                    </tr>
-                <th>Infrastracture</th>
-                    <tr>
-                        AWS (ECS, S3, CloudFront, IAM, SSM, etc...)
-                    </tr>
-                    <tr>
-                        GCP (CloudRun, CloudStorage, BigQuery, etc...)
-                    </tr>
+    const stacks: Stack[] = [
+        {
+            name: "Programming Language",
+            description: ["Python", "Go"]
+        },
+        {
+            name: "Infrastracture",
+            description: ["AWS (ECS, S3, CloudFront, IAM, SSM, etc...)", "GCP (CloudRun, CloudStorage, BigQuery, etc...)"]
+        },
+        {
+            name: "Tools",
+            description: ["Terraform", "Ansible", "Docker", "CI/CD (GitHub Actions, CircleCI)"]
+        }
+    ];
 
-                <th>Tools</th>
-                    <tr>
-                        Terraform
-                    </tr>
-                    <tr>
-                        Ansible
-                        Docker
-                        CI/CD (GitHub Actions, CircleCI)
-                    </tr>
-                </tbody>
-            </table>
+    return (
+        <div className="Stacks">
+            <h2> 技術スタック </h2>
+            <div className="Stacks-list">
+                {stacks.map((stack) => (
+                    <div key={stack.name}>
+                        <h3> {stack.name} </h3>
+                        <ul>
+                            {stack.description.map((description) => (
+                                <li key={description}> {description} </li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }

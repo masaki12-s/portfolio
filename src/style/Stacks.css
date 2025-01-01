@@ -1,0 +1,15 @@
+.Stacks {
+    text-align: center;
+    justify-content: center;
+}
+
+.Stacks-header {
+    /* // h2タグのスタイルを上書き */
+    font-size: 2em;
+    text-align: center;
+}
+
+.Stacks-list {
+    text-align: left;
+    margin-left: 30%;
+}
