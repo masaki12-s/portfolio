@@ -97,6 +97,7 @@ export default function Outputs() {
                     </section>
                 ))}
             </div>
+            <div style={{ height: "20px" }}></div>
             <h2>note</h2>
             <div className="note">
                 {noteData.map(post => (
@@ -104,7 +105,6 @@ export default function Outputs() {
                         <a href={post.url}>{post.title}</a>
                     </li>
                 ))}
-
             </div>
         </div>
     );
