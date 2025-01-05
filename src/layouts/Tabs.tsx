@@ -4,6 +4,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Home from '../components/Home';
 import About from '../components/About';
+import Goals from '../components/Goals';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -47,6 +48,7 @@ export default function Basictabs() {
                 <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
                     <Tab label="home" {...a11yProps(0)} />
                     <Tab label="about" {...a11yProps(1)} />
+                    <Tab label="goals" {...a11yProps(2)} />
                 </Tabs>
             </Box>
             <CustomTabPanel value={value} index={0}>
@@ -54,6 +56,9 @@ export default function Basictabs() {
             </CustomTabPanel>
             <CustomTabPanel value={value} index={1}>
                 <About />
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={2}>
+                <Goals />
             </CustomTabPanel>
         </Box>
     );
