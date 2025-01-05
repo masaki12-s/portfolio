@@ -1,11 +1,17 @@
 import '../style/Goals.css';
 
 interface Goal {
-    goal: string[];
+    goal: string;
+    achieved: boolean;
 }
 
-interface Common extends Goal { }
-interface Enginnering extends Goal { }
+interface Common {
+    goals: Goal[];
+}
+
+interface Enginnering {
+    goals: Goal[];
+}
 
 interface GoalsEachYear {
     year: string;
@@ -16,22 +22,32 @@ interface GoalsEachYear {
 const year_2025: GoalsEachYear = {
     year: "2025",
     common: {
-        goal: [
-            "英語を使ってコミュニケーションを取る",
-            "読書をする",
-            "筋トレを継続する"
+        goals: [
+            {
+                goal: "英語の勉強を続ける",
+                achieved: false
+            },
+            {
+                goal: "読書を続ける",
+                achieved: false
+            },
         ]
     },
     engineering: {
-        goal: [
-            "Go言語のプロジェクトを作る",
-            "AWSの認定資格を取得する",
-            "CI/CDの仕組みを理解する"
+        goals: [
+            {
+                goal: "DBの本読む",
+                achieved: false
+            },
+            {
+                goal: "APMからDBクエリのチューニングをする",
+                achieved: false
+            },
         ]
     }
 }
 
-const goals: GoalsEachYear[] = [
+const goals_each_year: GoalsEachYear[] = [
     year_2025
 ]
 
@@ -40,29 +56,32 @@ export default function Goals() {
     return (
         <div>
             <h2>目標</h2>
-            {goals.map((goal) => (
+            {goals_each_year.map((goal: GoalsEachYear) => (
                 <div key={goal.year}>
                     <h3>{goal.year}</h3>
-                    <h4>一般的な目標</h4>
-                    {goal.common.goal.map((commonGoal: string) => (
-                        <div className="item" key={commonGoal}>
+                    <h4>一般的な目標: 計{goal.common.goals.length}個</h4>
+                    {goal.common.goals.map((commonGoal: Goal) => (
+                        <div className="item" key={commonGoal.goal}>
                             <input
                                 type="checkbox"
+                                checked={commonGoal.achieved}
                             />
-                            <span>{commonGoal}</span>
+                            <span>{commonGoal.goal}</span>
                         </div>
                     ))}
-                    <h4>エンジニアリング</h4>
-                    {goal.engineering.goal.map((engineeringGoal: string) => (
-                        <div className="item" key={engineeringGoal}>
+                    <h4>エンジニアリング目標: 計{goal.engineering.goals.length}個</h4>
+                    {goal.engineering.goals.map((engineeringGoal: Goal) => (
+                        <div className="item" key={engineeringGoal.goal}>
                             <input
                                 type="checkbox"
+                                checked={engineeringGoal.achieved}
                             />
-                            <span>{engineeringGoal}</span>
+                            <span>{engineeringGoal.goal}</span>
                         </div>
                     ))}
                 </div>
-            ))}
+            ))
+            }
         </div>
-    )
+    );
 }
