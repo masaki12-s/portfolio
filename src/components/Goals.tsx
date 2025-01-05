@@ -1,7 +1,7 @@
 import '../style/Goals.css';
 
 interface Goal {
-    goal: string;
+    goal: string[];
 }
 
 interface Common extends Goal { }
@@ -9,19 +9,26 @@ interface Enginnering extends Goal { }
 
 interface GoalsEachYear {
     year: string;
-    common: Common[];
-    engineering: Enginnering[];
+    common: Common;
+    engineering: Enginnering;
 }
 
 const year_2025: GoalsEachYear = {
     year: "2025",
-    common: [
-        {
-            goal: "英語の勉強を継続する"
-        },
-    ],
-    engineering: [
-    ]
+    common: {
+        goal: [
+            "英語を使ってコミュニケーションを取る",
+            "読書をする",
+            "筋トレを継続する"
+        ]
+    },
+    engineering: {
+        goal: [
+            "Go言語のプロジェクトを作る",
+            "AWSの認定資格を取得する",
+            "CI/CDの仕組みを理解する"
+        ]
+    }
 }
 
 const goals: GoalsEachYear[] = [
@@ -37,21 +44,21 @@ export default function Goals() {
                 <div key={goal.year}>
                     <h3>{goal.year}</h3>
                     <h4>一般的な目標</h4>
-                    {goal.common.map((common) => (
-                        <div className="item" key={common.goal}>
+                    {goal.common.goal.map((commonGoal: string) => (
+                        <div className="item" key={commonGoal}>
                             <input
                                 type="checkbox"
                             />
-                            <span>{common.goal}</span>
+                            <span>{commonGoal}</span>
                         </div>
                     ))}
                     <h4>エンジニアリング</h4>
-                    {goal.engineering.map((engineering) => (
-                        <div className="item" key={engineering.goal}>
+                    {goal.engineering.goal.map((engineeringGoal: string) => (
+                        <div className="item" key={engineeringGoal}>
                             <input
                                 type="checkbox"
                             />
-                            <span>{engineering.goal}</span>
+                            <span>{engineeringGoal}</span>
                         </div>
                     ))}
                 </div>
